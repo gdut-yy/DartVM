@@ -47,3 +47,9 @@ key:upgrade-insecure-requests
 value:1
 请求被处理了
 ```
+
+### DartVM服务器开发（第四天）--代码优化
+```dart
+print(dirname(dirname(Platform.script.toFilePath()))+'/webApp');
+C:\Users\DEVYY\Documents\GitHub\DartVM\demo1/webApp
+```

@@ -1,26 +1,35 @@
 import 'dart:io';
 import 'package:http_server/http_server.dart';
+import 'package:path/path.dart';
 
 main() async {
-  VirtualDirectory staticFiles = new VirtualDirectory('.');
+  var webPath = dirname(dirname(Platform.script.toFilePath())) + '/webApp';
+  VirtualDirectory staticFiles = new VirtualDirectory(webPath);
 
+  // 允许目录监听,按照目录去请求
+  staticFiles.allowDirectoryListing = true;
+  // 目录处理，当请求根目录时，会返回该地址
+  staticFiles.directoryHandler = (dir, request) {
+    var indexUri = new Uri.file(
+      dir.path,
+    ).resolve('index.html');
+    staticFiles.serveFile(new File(indexUri.toFilePath()), request);
+  };
+  // 处理访问不存在的页面
+  staticFiles.errorPageHandler = (request) {
+    if (request.uri.pathSegments.last.contains('.html')) {
+      staticFiles.serveFile(new File(webPath + '/404.html'), request);
+    } else {
+      handleMessage(request);
+    }
+  };
   var requestServer = await HttpServer.bind(InternetAddress.loopbackIPv6, 8080);
-
   print('监听 localhost 地址，端口号为${requestServer.port}');
 
   // 监听请求
   await for (HttpRequest request in requestServer) {
-    writeHeaders(request);
-
-    if (request.uri.toString() == '/' ||
-        request.uri.toString() == '/index.html') {
-      // 当我们收到请求根目录或者请求 /index.html 页面时，返回我们的刚刚写好的 html 页面
-      // 因为 http_server 这个包已经为我们处理好了，所以如果 html 不存在，也不会让服务器奔溃掉，而是返回未找到页面
-      staticFiles.serveFile(new File('../webApp/index.html'), request);
-    } else {
-      // 如果不是请求该页面，交回给 get，post 去处理
-      handleMessage(request);
-    }
+    // 交给 staticFiles 处理了
+    staticFiles.serveRequest(request);
   }
 }
 
@@ -66,7 +75,6 @@ void handleGET(HttpRequest request) {
 /// 处理POST请求
 void handlePOST(HttpRequest request) {}
 
-///
 void writeHeaders(HttpRequest request) {
   List<String> headers = [];
   request.headers.forEach((key, values) {
