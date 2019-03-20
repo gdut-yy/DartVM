@@ -1,0 +1,5 @@
+name: demo
+descript: 应用介绍
+
+dependencies:
+  http_server: ^0.9.8
