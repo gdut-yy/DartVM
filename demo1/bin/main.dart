@@ -1,10 +1,14 @@
 import 'dart:io';
+import 'package:demo/annotation.dart';
 import 'package:demo/LogUt.dart';
 import 'package:http_server/http_server.dart';
 import 'package:path/path.dart';
 import 'package:logging/logging.dart';
 
 main() async {
+  /// 添加控制器
+  ControllerManager.manager.addController(new UserController());
+
   var webPath = dirname(dirname(Platform.script.toFilePath())) + '/webApp';
   VirtualDirectory staticFiles = new VirtualDirectory(webPath);
 
@@ -23,7 +27,9 @@ main() async {
       staticFiles.serveFile(new File(webPath + '/404.html'), request);
     } else {
       try {
-        handleMessage(request);
+//        handleMessage(request);
+        /// 将之前的 handleMessage(request) 方法替换为
+        ControllerManager.manager.requestServer(request);
         throw ArgumentError('Warning happen');
       } catch (e) {
         try {

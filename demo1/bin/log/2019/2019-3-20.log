@@ -13,3 +13,275 @@
 #10     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
 #11     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
 #12     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
+
+
+1::WARNING::2019-03-20 19:38:51.636131::请求消息发生异常
+::Invalid argument(s): Warning happen
+::#0      main.<anonymous closure> (file:///C:/Users/DEVYY/Documents/GitHub/DartVM/demo1/bin/main.dart:32:9)
+#1      VirtualDirectory._serveErrorPage (package:http_server/src/virtual_directory.dart:368:7)
+#2      VirtualDirectory.serveRequest.<anonymous closure> (package:http_server/src/virtual_directory.dart:101:9)
+#3      _RootZone.runUnary (dart:async/zone.dart:1379:54)
+#4      _FutureListener.handleValue (dart:async/future_impl.dart:126:18)
+#5      Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:639:45)
+#6      Future._propagateToListeners (dart:async/future_impl.dart:668:32)
+#7      Future._completeWithValue (dart:async/future_impl.dart:483:5)
+#8      Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:513:7)
+#9      _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#10     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#11     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
+#12     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
+
+
+1::WARNING::2019-03-20 19:43:51.730375::请求消息发生异常
+::Invalid argument(s): Warning happen
+::#0      main.<anonymous closure> (file:///C:/Users/DEVYY/Documents/GitHub/DartVM/demo1/bin/main.dart:32:9)
+#1      VirtualDirectory._serveErrorPage (package:http_server/src/virtual_directory.dart:368:7)
+#2      VirtualDirectory.serveRequest.<anonymous closure> (package:http_server/src/virtual_directory.dart:101:9)
+#3      _RootZone.runUnary (dart:async/zone.dart:1379:54)
+#4      _FutureListener.handleValue (dart:async/future_impl.dart:126:18)
+#5      Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:639:45)
+#6      Future._propagateToListeners (dart:async/future_impl.dart:668:32)
+#7      Future._completeWithValue (dart:async/future_impl.dart:483:5)
+#8      Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:513:7)
+#9      _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#10     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#11     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
+#12     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
+
+
+2::WARNING::2019-03-20 19:43:54.756971::请求消息发生异常
+::Invalid argument(s): Warning happen
+::#0      main.<anonymous closure> (file:///C:/Users/DEVYY/Documents/GitHub/DartVM/demo1/bin/main.dart:32:9)
+#1      VirtualDirectory._serveErrorPage (package:http_server/src/virtual_directory.dart:368:7)
+#2      VirtualDirectory.serveRequest.<anonymous closure> (package:http_server/src/virtual_directory.dart:101:9)
+#3      _RootZone.runUnary (dart:async/zone.dart:1379:54)
+#4      _FutureListener.handleValue (dart:async/future_impl.dart:126:18)
+#5      Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:639:45)
+#6      Future._propagateToListeners (dart:async/future_impl.dart:668:32)
+#7      Future._completeWithValue (dart:async/future_impl.dart:483:5)
+#8      Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:513:7)
+#9      _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#10     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#11     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
+#12     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
+
+
+3::WARNING::2019-03-20 19:43:59.830525::请求消息发生异常
+::Invalid argument(s): Warning happen
+::#0      main.<anonymous closure> (file:///C:/Users/DEVYY/Documents/GitHub/DartVM/demo1/bin/main.dart:32:9)
+#1      VirtualDirectory._serveErrorPage (package:http_server/src/virtual_directory.dart:368:7)
+#2      VirtualDirectory.serveRequest.<anonymous closure> (package:http_server/src/virtual_directory.dart:101:9)
+#3      _RootZone.runUnary (dart:async/zone.dart:1379:54)
+#4      _FutureListener.handleValue (dart:async/future_impl.dart:126:18)
+#5      Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:639:45)
+#6      Future._propagateToListeners (dart:async/future_impl.dart:668:32)
+#7      Future._completeWithValue (dart:async/future_impl.dart:483:5)
+#8      Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:513:7)
+#9      _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#10     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#11     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
+#12     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
+
+
+1::WARNING::2019-03-20 19:46:38.712841::请求消息发生异常
+::Invalid argument(s): Warning happen
+::#0      main.<anonymous closure> (file:///C:/Users/DEVYY/Documents/GitHub/DartVM/demo1/bin/main.dart:33:9)
+#1      VirtualDirectory._serveErrorPage (package:http_server/src/virtual_directory.dart:368:7)
+#2      VirtualDirectory.serveRequest.<anonymous closure> (package:http_server/src/virtual_directory.dart:101:9)
+#3      _RootZone.runUnary (dart:async/zone.dart:1379:54)
+#4      _FutureListener.handleValue (dart:async/future_impl.dart:126:18)
+#5      Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:639:45)
+#6      Future._propagateToListeners (dart:async/future_impl.dart:668:32)
+#7      Future._completeWithValue (dart:async/future_impl.dart:483:5)
+#8      Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:513:7)
+#9      _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#10     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#11     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
+#12     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
+
+
+2::WARNING::2019-03-20 19:48:03.502831::请求消息发生异常
+::Invalid argument(s): Warning happen
+::#0      main.<anonymous closure> (file:///C:/Users/DEVYY/Documents/GitHub/DartVM/demo1/bin/main.dart:33:9)
+#1      VirtualDirectory._serveErrorPage (package:http_server/src/virtual_directory.dart:368:7)
+#2      VirtualDirectory.serveRequest.<anonymous closure> (package:http_server/src/virtual_directory.dart:101:9)
+#3      _RootZone.runUnary (dart:async/zone.dart:1379:54)
+#4      _FutureListener.handleValue (dart:async/future_impl.dart:126:18)
+#5      Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:639:45)
+#6      Future._propagateToListeners (dart:async/future_impl.dart:668:32)
+#7      Future._completeWithValue (dart:async/future_impl.dart:483:5)
+#8      Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:513:7)
+#9      _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#10     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#11     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
+#12     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
+
+
+1::WARNING::2019-03-20 19:48:12.910502::请求消息发生异常
+::Invalid argument(s): Warning happen
+::#0      main.<anonymous closure> (file:///C:/Users/DEVYY/Documents/GitHub/DartVM/demo1/bin/main.dart:33:9)
+#1      VirtualDirectory._serveErrorPage (package:http_server/src/virtual_directory.dart:368:7)
+#2      VirtualDirectory.serveRequest.<anonymous closure> (package:http_server/src/virtual_directory.dart:101:9)
+#3      _RootZone.runUnary (dart:async/zone.dart:1379:54)
+#4      _FutureListener.handleValue (dart:async/future_impl.dart:126:18)
+#5      Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:639:45)
+#6      Future._propagateToListeners (dart:async/future_impl.dart:668:32)
+#7      Future._completeWithValue (dart:async/future_impl.dart:483:5)
+#8      Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:513:7)
+#9      _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#10     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#11     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
+#12     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
+
+
+2::WARNING::2019-03-20 19:53:18.506465::请求消息发生异常
+::Invalid argument(s): Warning happen
+::#0      main.<anonymous closure> (file:///C:/Users/DEVYY/Documents/GitHub/DartVM/demo1/bin/main.dart:33:9)
+#1      VirtualDirectory._serveErrorPage (package:http_server/src/virtual_directory.dart:368:7)
+#2      VirtualDirectory.serveRequest.<anonymous closure> (package:http_server/src/virtual_directory.dart:101:9)
+#3      _RootZone.runUnary (dart:async/zone.dart:1379:54)
+#4      _FutureListener.handleValue (dart:async/future_impl.dart:126:18)
+#5      Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:639:45)
+#6      Future._propagateToListeners (dart:async/future_impl.dart:668:32)
+#7      Future._completeWithValue (dart:async/future_impl.dart:483:5)
+#8      Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:513:7)
+#9      _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#10     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#11     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
+#12     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
+
+
+3::WARNING::2019-03-20 19:53:35.951723::请求消息发生异常
+::Invalid argument(s): Warning happen
+::#0      main.<anonymous closure> (file:///C:/Users/DEVYY/Documents/GitHub/DartVM/demo1/bin/main.dart:33:9)
+#1      VirtualDirectory._serveErrorPage (package:http_server/src/virtual_directory.dart:368:7)
+#2      VirtualDirectory.serveRequest.<anonymous closure> (package:http_server/src/virtual_directory.dart:101:9)
+#3      _RootZone.runUnary (dart:async/zone.dart:1379:54)
+#4      _FutureListener.handleValue (dart:async/future_impl.dart:126:18)
+#5      Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:639:45)
+#6      Future._propagateToListeners (dart:async/future_impl.dart:668:32)
+#7      Future._completeWithValue (dart:async/future_impl.dart:483:5)
+#8      Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:513:7)
+#9      _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#10     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#11     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
+#12     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
+
+
+1::WARNING::2019-03-20 19:55:08.458080::请求消息发生异常
+::Invalid argument(s): Warning happen
+::#0      main.<anonymous closure> (file:///C:/Users/DEVYY/Documents/GitHub/DartVM/demo1/bin/main.dart:33:9)
+#1      VirtualDirectory._serveErrorPage (package:http_server/src/virtual_directory.dart:368:7)
+#2      VirtualDirectory.serveRequest.<anonymous closure> (package:http_server/src/virtual_directory.dart:101:9)
+#3      _RootZone.runUnary (dart:async/zone.dart:1379:54)
+#4      _FutureListener.handleValue (dart:async/future_impl.dart:126:18)
+#5      Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:639:45)
+#6      Future._propagateToListeners (dart:async/future_impl.dart:668:32)
+#7      Future._completeWithValue (dart:async/future_impl.dart:483:5)
+#8      Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:513:7)
+#9      _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#10     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#11     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
+#12     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
+
+
+1::WARNING::2019-03-20 19:55:17.573827::请求消息发生异常
+::Invalid argument(s): Warning happen
+::#0      main.<anonymous closure> (file:///C:/Users/DEVYY/Documents/GitHub/DartVM/demo1/bin/main.dart:33:9)
+#1      VirtualDirectory._serveErrorPage (package:http_server/src/virtual_directory.dart:368:7)
+#2      VirtualDirectory.serveRequest.<anonymous closure> (package:http_server/src/virtual_directory.dart:101:9)
+#3      _RootZone.runUnary (dart:async/zone.dart:1379:54)
+#4      _FutureListener.handleValue (dart:async/future_impl.dart:126:18)
+#5      Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:639:45)
+#6      Future._propagateToListeners (dart:async/future_impl.dart:668:32)
+#7      Future._completeWithValue (dart:async/future_impl.dart:483:5)
+#8      Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:513:7)
+#9      _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#10     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#11     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
+#12     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
+
+
+2::WARNING::2019-03-20 19:55:18.346050::请求消息发生异常
+::Invalid argument(s): Warning happen
+::#0      main.<anonymous closure> (file:///C:/Users/DEVYY/Documents/GitHub/DartVM/demo1/bin/main.dart:33:9)
+#1      VirtualDirectory._serveErrorPage (package:http_server/src/virtual_directory.dart:368:7)
+#2      VirtualDirectory.serveRequest.<anonymous closure> (package:http_server/src/virtual_directory.dart:101:9)
+#3      _RootZone.runUnary (dart:async/zone.dart:1379:54)
+#4      _FutureListener.handleValue (dart:async/future_impl.dart:126:18)
+#5      Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:639:45)
+#6      Future._propagateToListeners (dart:async/future_impl.dart:668:32)
+#7      Future._completeWithValue (dart:async/future_impl.dart:483:5)
+#8      Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:513:7)
+#9      _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#10     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#11     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
+#12     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
+
+
+3::WARNING::2019-03-20 19:55:18.688164::请求消息发生异常
+::Invalid argument(s): Warning happen
+::#0      main.<anonymous closure> (file:///C:/Users/DEVYY/Documents/GitHub/DartVM/demo1/bin/main.dart:33:9)
+#1      VirtualDirectory._serveErrorPage (package:http_server/src/virtual_directory.dart:368:7)
+#2      VirtualDirectory.serveRequest.<anonymous closure> (package:http_server/src/virtual_directory.dart:101:9)
+#3      _RootZone.runUnary (dart:async/zone.dart:1379:54)
+#4      _FutureListener.handleValue (dart:async/future_impl.dart:126:18)
+#5      Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:639:45)
+#6      Future._propagateToListeners (dart:async/future_impl.dart:668:32)
+#7      Future._completeWithValue (dart:async/future_impl.dart:483:5)
+#8      Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:513:7)
+#9      _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#10     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#11     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
+#12     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
+
+
+4::WARNING::2019-03-20 19:55:18.856757::请求消息发生异常
+::Invalid argument(s): Warning happen
+::#0      main.<anonymous closure> (file:///C:/Users/DEVYY/Documents/GitHub/DartVM/demo1/bin/main.dart:33:9)
+#1      VirtualDirectory._serveErrorPage (package:http_server/src/virtual_directory.dart:368:7)
+#2      VirtualDirectory.serveRequest.<anonymous closure> (package:http_server/src/virtual_directory.dart:101:9)
+#3      _RootZone.runUnary (dart:async/zone.dart:1379:54)
+#4      _FutureListener.handleValue (dart:async/future_impl.dart:126:18)
+#5      Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:639:45)
+#6      Future._propagateToListeners (dart:async/future_impl.dart:668:32)
+#7      Future._completeWithValue (dart:async/future_impl.dart:483:5)
+#8      Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:513:7)
+#9      _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#10     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#11     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
+#12     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
+
+
+5::WARNING::2019-03-20 19:55:19.026003::请求消息发生异常
+::Invalid argument(s): Warning happen
+::#0      main.<anonymous closure> (file:///C:/Users/DEVYY/Documents/GitHub/DartVM/demo1/bin/main.dart:33:9)
+#1      VirtualDirectory._serveErrorPage (package:http_server/src/virtual_directory.dart:368:7)
+#2      VirtualDirectory.serveRequest.<anonymous closure> (package:http_server/src/virtual_directory.dart:101:9)
+#3      _RootZone.runUnary (dart:async/zone.dart:1379:54)
+#4      _FutureListener.handleValue (dart:async/future_impl.dart:126:18)
+#5      Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:639:45)
+#6      Future._propagateToListeners (dart:async/future_impl.dart:668:32)
+#7      Future._completeWithValue (dart:async/future_impl.dart:483:5)
+#8      Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:513:7)
+#9      _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#10     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#11     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
+#12     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
+
+
+1::WARNING::2019-03-20 19:55:25.078243::请求消息发生异常
+::Invalid argument(s): Warning happen
+::#0      main.<anonymous closure> (file:///C:/Users/DEVYY/Documents/GitHub/DartVM/demo1/bin/main.dart:33:9)
+#1      VirtualDirectory._serveErrorPage (package:http_server/src/virtual_directory.dart:368:7)
+#2      VirtualDirectory.serveRequest.<anonymous closure> (package:http_server/src/virtual_directory.dart:101:9)
+#3      _RootZone.runUnary (dart:async/zone.dart:1379:54)
+#4      _FutureListener.handleValue (dart:async/future_impl.dart:126:18)
+#5      Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:639:45)
+#6      Future._propagateToListeners (dart:async/future_impl.dart:668:32)
+#7      Future._completeWithValue (dart:async/future_impl.dart:483:5)
+#8      Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:513:7)
+#9      _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#10     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#11     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
+#12     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
