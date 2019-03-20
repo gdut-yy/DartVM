@@ -9,6 +9,13 @@
             </list>
           </value>
         </entry>
+        <entry key="logging">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.flutter-io.cn/logging-0.11.3+2/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="mime">
           <value>
             <list>
@@ -27,6 +34,7 @@
     </properties>
     <CLASSES>
       <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.flutter-io.cn/http_server-0.9.8+1/lib" />
+      <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.flutter-io.cn/logging-0.11.3+2/lib" />
       <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.flutter-io.cn/mime-0.9.6+2/lib" />
       <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.flutter-io.cn/path-1.6.2/lib" />
     </CLASSES>

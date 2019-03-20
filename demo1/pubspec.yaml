@@ -3,3 +3,4 @@ descript: 应用介绍
 
 dependencies:
   http_server: ^0.9.8
+  logging: ^0.11.3+2

@@ -1,6 +1,8 @@
 import 'dart:io';
+import 'package:demo/LogUt.dart';
 import 'package:http_server/http_server.dart';
 import 'package:path/path.dart';
+import 'package:logging/logging.dart';
 
 main() async {
   var webPath = dirname(dirname(Platform.script.toFilePath())) + '/webApp';
@@ -20,11 +22,23 @@ main() async {
     if (request.uri.pathSegments.last.contains('.html')) {
       staticFiles.serveFile(new File(webPath + '/404.html'), request);
     } else {
-      handleMessage(request);
+      try {
+        handleMessage(request);
+        throw ArgumentError('Warning happen');
+      } catch (e) {
+        try {
+          //有可能没有回复客户端，所以这里回复一次
+          request.response
+            ..statusCode = HttpStatus.internalServerError
+            ..close();
+        } catch (_) {}
+        Logger.root.warning('请求消息发生异常', e,
+            e.runtimeType == ArgumentError ? e.stackTrace : null);
+      }
     }
   };
   var requestServer = await HttpServer.bind(InternetAddress.loopbackIPv6, 8080);
-  print('监听 localhost 地址，端口号为${requestServer.port}');
+  LogUt.log.finest('服务器启动：http://localhost:${requestServer.port}');
 
   // 监听请求
   await for (HttpRequest request in requestServer) {
@@ -85,24 +99,4 @@ void writeHeaders(HttpRequest request) {
     headers.add(header.substring(0, header.length - 2));
   });
   writeLog('${headers.join('\n')}');
-}
-
-void writeLog(String log) async {
-  var date = DateTime.now();
-  var year = date.year;
-  var month = date.month;
-  var day = date.day;
-  var hour = date.hour;
-  var minute = date.minute;
-
-  //如果 recursive 为 true，会创建命名目录及父级目录
-  Directory directory =
-      await new Directory('log/$year-$month-$day').create(recursive: true);
-
-  File file = new File('${directory.path}/$hour:$minute.log');
-  file.exists().then((isExists) {
-    String logAddTime = 'time：${date.toIso8601String()}\n$log';
-    file.writeAsString(isExists ? '\n\n$logAddTime' : logAddTime,
-        mode: FileMode.append);
-  });
 }
