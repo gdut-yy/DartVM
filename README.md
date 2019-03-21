@@ -14,7 +14,7 @@ $ dart --version
 Dart VM version: 2.2.0 (Unknown timestamp) on "linux_x64"
 ```
 ## 安装 Dart 环境（Windows）
-一般而言，知道 Dart 的大概率知道 Flutter，直接使用 Flutter 目录下的就好了
+一般而言，知道 `Dart` 的大概率知道 `Flutter`，直接使用 `Flutter` 目录下 `Dart SDK` 的就好了
 ```bash
 $ export DART_HOME=C:\Users\DEVYY\Documents\FlutterSDK\flutter\bin\cache\dart-sdk
 $ export Path=Path;%DART_HOME%\bin
@@ -90,3 +90,105 @@ C:\Users\DEVYY\Documents\GitHub\DartVM\demo1/webApp
 - Jaguar
     - 官网：https://jaguar-dart.com/
     - github：https://github.com/Jaguar-dart/jaguar
+
+### DartVM服务器开发（第九天）--Aqueduct环境搭建
+激活 Aqueduct
+```
+$ pub global activate aqueduct
+Resolving dependencies...
++ analyzer 0.34.3 (0.35.4 available)
++ aqueduct 3.2.0
++ args 1.5.1
++ async 2.0.8
++ charcode 1.1.2
++ codable 1.0.0
++ collection 1.14.11
++ convert 2.1.1
++ crypto 2.0.6
++ csslib 0.14.6
++ front_end 0.1.9+1 (0.1.14 available)
++ glob 1.1.7
++ html 0.13.4+1
++ isolate_executor 2.0.2+1
++ kernel 0.3.9+1 (0.3.14 available)
++ logging 0.11.3+2
++ meta 1.1.7
++ open_api 2.0.1
++ package_config 1.0.5
++ password_hash 2.0.0
++ path 1.6.2
++ plugin 0.2.0+3
++ postgres 1.0.2
++ pub_cache 0.2.3
++ pub_semver 1.4.2
++ safe_config 2.0.2
++ source_span 1.5.5
++ string_scanner 1.0.4
++ term_glyph 1.1.0
++ typed_data 1.1.6
++ utf 0.9.0+5
++ watcher 0.9.7+10
++ yaml 2.1.15
+Downloading aqueduct 3.2.0...
+Downloading password_hash 2.0.0...
+Downloading open_api 2.0.1...
+Downloading codable 1.0.0...
+Downloading safe_config 2.0.2...
+Downloading postgres 1.0.2...
+Downloading pub_cache 0.2.3...
+Downloading isolate_executor 2.0.2+1...
+Downloading analyzer 0.34.3...
+Downloading kernel 0.3.9+1...
+Downloading front_end 0.1.9+1...
+Precompiling executables...
+Precompiled aqueduct:bin\aqueduct.
+Installed executable aqueduct.
+Warning: Pub installs executables into C:\Users\DEVYY\AppData\Roaming\Pub\Cache\bin, which is not on your path.
+You can fix that by adding that directory to your system's "Path" environment variable.
+A web search for "configure windows path" will show you how.
+Activated aqueduct 3.2.0.
+```
+配置环境变量 & 测试 `aqueduct` 命令
+```bash
+$ export AQUEDUCT_PATH=C:\Users\DEVYY\AppData\Roaming\Pub\Cache\bin
+$ export Path=Path;%AQUEDUCT_PATH%\
+$ aqueduct
+-- Aqueduct CLI Version: 3.2.0
+Aqueduct is a tool for managing Aqueduct applications.
+
+
+Usage: aqueduct <command> [arguments]
+
+Options:
+    --version            Prints version of this tool
+    --[no-]color         Toggles ANSI color
+                         (defaults to on)
+
+-h, --help               Shows this
+    --[no-]stacktrace    Shows the stacktrace if an error occurs
+    --[no-]machine       Output is machine-readable, usable for creating tools on top of this CLI. Behavior varies by command.
+Available sub-commands:
+  document   Generates an OpenAPI specification of an application.
+  create     Creates Aqueduct applications from templates.
+  serve      Runs Aqueduct applications.
+  setup      A one-time setup command for your development environment.
+  auth       A tool for adding OAuth 2.0 clients to a database using the managed_auth package.
+  db         Modifies, verifies and generates database schemas.
+```
+使用 CLI 构建项目
+```
+$ aqueduct create my_aqueduct
+$ cd my_aqueduct
+$ aqueduct serve
+-- Aqueduct CLI Version: 3.2.0
+-- Aqueduct project version: 3.2.0
+-- Preparing...
+-- Starting application 'my_aqueduct/my_aqueduct'
+    Channel: MyAqueductChannel
+    Config: C:\Users\DEVYY\Documents\GitHub\DartVM\my_aqueduct\config.yaml
+    Port: 8888
+[INFO] aqueduct: Server aqueduct/1 started.
+[INFO] aqueduct: Server aqueduct/2 started.
+[INFO] aqueduct: Server aqueduct/3 started.
+[INFO] aqueduct: Server aqueduct/4 started.
+```
