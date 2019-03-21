@@ -74,3 +74,11 @@ C:\Users\DEVYY\Documents\GitHub\DartVM\demo1/webApp
 #11     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
 #12     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
 ```
+
+### DartVM服务器开发（第七天）--WebSocket
+```log
+0::FINEST::2019-03-21 09:06:15.393541::服务器启动：http://localhost:8080
+收到客户端消息：Hello World!
+客户端收到消息！
+服务器回复: XX:Hello World!
+```

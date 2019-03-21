@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:demo/annotation.dart';
 import 'package:demo/LogUt.dart';
+import 'package:demo/websocket.dart';
 import 'package:http_server/http_server.dart';
 import 'package:path/path.dart';
 import 'package:logging/logging.dart';
@@ -25,6 +26,18 @@ main() async {
   staticFiles.errorPageHandler = (request) {
     if (request.uri.pathSegments.last.contains('.html')) {
       staticFiles.serveFile(new File(webPath + '/404.html'), request);
+    }
+
+    /// 当请求路径为 /mini，判断为进行 webScoket 连接
+    else if (request.uri.path == '/mini') {
+      WebSocketManager.manager.serveRequest(request).catchError((error) {
+        LogUt.log.warning('webSocket异常', error, error.stackTrace);
+      });
+    }
+
+    /// 当请求地址为 /mini/client 时开启一个客户端
+    else if (request.uri.path == '/mini/client') {
+      SocketClient();
     } else {
       try {
 //        handleMessage(request);
@@ -105,4 +118,17 @@ void writeHeaders(HttpRequest request) {
     headers.add(header.substring(0, header.length - 2));
   });
   writeLog('${headers.join('\n')}');
+}
+
+/// 开启一个客户端
+void SocketClient() async {
+  // 客户端连接到服务端
+  WebSocket client = await WebSocket.connect('ws://localhost:8080/mini');
+  // 客户端接收消息
+  client.listen((msg) {
+    print('客户端收到消息！');
+    print(msg);
+  });
+  // 客户端发送消息
+  client.add('Hello World!');
 }
