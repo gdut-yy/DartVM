@@ -82,3 +82,11 @@ C:\Users\DEVYY\Documents\GitHub\DartVM\demo1/webApp
 客户端收到消息！
 服务器回复: XX:Hello World!
 ```
+
+### DartVM服务器开发（第八天）--http服务端框架
+- Aqueduct 
+    - 官网：https://aqueduct.io/docs/tour/
+    - github：https://github.com/stablekernel/aqueduct
+- Jaguar
+    - 官网：https://jaguar-dart.com/
+    - github：https://github.com/Jaguar-dart/jaguar
